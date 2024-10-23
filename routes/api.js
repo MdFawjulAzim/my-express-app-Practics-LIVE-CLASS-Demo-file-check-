@@ -15,7 +15,11 @@ router.post("/demo2",taskController.demo2);
 //demo 3 Request form data
 router.post("/demo3",taskController.demo3);
 
+//demo 4 upload file
+router.post("/demo4",taskController.demo4);
 
+//demo 5 request headers
+router.post("/demo5",taskController.demo5);
 
 
 

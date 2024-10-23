@@ -40,3 +40,21 @@ export const demo3= async (req,res)=>{
     let resBody=req.body;
     return res.json({message:pic,resBody:resBody});
 }
+
+//demo 4 upload a file
+
+export const demo4= async (req,res)=>{
+
+    let myFile=req.files['myFile']
+    let myFilePath=UPLOAD_FOLDER(myFile.name)
+    await moveFile(myFile,myFilePath)
+    return res.json({message:"successfully moved file"});
+}
+
+//demo 5 request headers
+
+export const demo5= async (req,res)=>{
+
+    let headers=req.headers;
+    return res.json({message:headers});
+}
