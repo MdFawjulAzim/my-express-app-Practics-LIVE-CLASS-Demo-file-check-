@@ -31,3 +31,12 @@ export const demo2= async (req,res)=>{
 
     return res.json({message:data});
 }
+
+//demo 3
+
+export const demo3= async (req,res)=>{
+
+    let pic=req.files.pic.name;
+    let resBody=req.body;
+    return res.json({message:pic,resBody:resBody});
+}

@@ -8,6 +8,7 @@ import hpp from "hpp";
 import * as path from "path";
 import router from "./routes/api.js";
 import {MONGODB_CONNECTION,PORT,Max_JSON_SIZE,URL_ENCODER,WEB_CACHE,REQUEST_LIMIT_TIME,REQUEST_LIMIT_NUMBER} from "./app/config/config.js";
+import fileUpload from "express-fileupload";
 
 const app = express();
 
@@ -18,6 +19,10 @@ app.use(express.urlencoded({extended: URL_ENCODER}));
 app.use(hpp());
 app.use(helmet());
 app.use(cookieParser());
+
+app.use(fileUpload({
+    limits: { fileSize: 50 * 1024 * 1024 },
+  }));
 
 // Rate Limiting middleware
 const limit =rateLimit({windowMs:REQUEST_LIMIT_TIME,max:REQUEST_LIMIT_NUMBER});

@@ -12,6 +12,9 @@ router.post("/demo1q/:name/:age/:city",taskController.demo1q);
 //demo 2 Request body params
 router.post("/demo2",taskController.demo2);
 
+//demo 3 Request form data
+router.post("/demo3",taskController.demo3);
+
 
 
 
