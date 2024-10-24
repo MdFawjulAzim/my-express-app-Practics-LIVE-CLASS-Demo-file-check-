@@ -1,0 +1,223 @@
+{
+	"info": {
+		"_postman_id": "e6b942d6-e294-468e-84f2-cf415e555a61",
+		"name": "Express Project live class 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38179196"
+	},
+	"item": [
+		{
+			"name": "demo1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/demo1/fawjul/21/feni",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"demo1",
+						"fawjul",
+						"21",
+						"feni"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "demo 1 query string",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5080/api/demo1q/fawjul/21/feni?country=Bangladesh&lang=Bangla",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5080",
+					"path": [
+						"api",
+						"demo1q",
+						"fawjul",
+						"21",
+						"feni"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Bangladesh"
+						},
+						{
+							"key": "lang",
+							"value": "Bangla"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "demo 2 json data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\":\"Azim\",\r\n    \"city\":\"dhaka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5080/api/demo2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5080",
+					"path": [
+						"api",
+						"demo2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "demo 3 form data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Fawjul",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "dhaka",
+							"type": "text"
+						},
+						{
+							"key": "pic",
+							"type": "file",
+							"src": "/C:/Users/User/Desktop/0eafa401-5699-496a-a352-a060603ddca3.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5080/api/demo3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5080",
+					"path": [
+						"api",
+						"demo3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "demo 4 file upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "myfile",
+							"type": "file",
+							"src": "/C:/Users/User/Desktop/2024-04-19T18-09-17.182Z-HTML Template Design.zip"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5080/api/demo4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5080",
+					"path": [
+						"api",
+						"demo4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "demo 5 request header",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					},
+					{
+						"key": "batch",
+						"value": "marn 07",
+						"type": "text"
+					},
+					{
+						"key": "ostad",
+						"value": "32",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "myfile",
+							"type": "file",
+							"src": "/C:/Users/User/Desktop/2024-04-19T18-09-17.182Z-HTML Template Design.zip"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5080/api/demo5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5080",
+					"path": [
+						"api",
+						"demo5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
