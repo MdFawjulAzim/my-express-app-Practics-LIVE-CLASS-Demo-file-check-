@@ -1,3 +1,5 @@
+import {UPLOAD_FOLDER} from "../config/config.js";
+import {moveFile} from "../utility/moveFile.js";
 //create
 //demo 1
 export const demo1= async (req,res)=>{
