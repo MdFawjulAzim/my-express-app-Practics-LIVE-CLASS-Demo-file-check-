@@ -12,12 +12,12 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5050/api/demo1/fawjul/21/feni",
+					"raw": "http://localhost:5080/api/demo1/fawjul/21/feni",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5050",
+					"port": "5080",
 					"path": [
 						"api",
 						"demo1",
@@ -118,7 +118,7 @@
 						{
 							"key": "pic",
 							"type": "file",
-							"src": "/C:/Users/User/Desktop/0eafa401-5699-496a-a352-a060603ddca3.jpeg"
+							"src": "/C:/Users/User/Desktop/0eafa401-5699-496a-a352-a060603ddca3-removebg-preview.png"
 						}
 					]
 				},
@@ -152,9 +152,9 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "myfile",
+							"key": "myFile",
 							"type": "file",
-							"src": "/C:/Users/User/Desktop/2024-04-19T18-09-17.182Z-HTML Template Design.zip"
+							"src": "/C:/Users/User/Desktop/Amazon project.zip"
 						}
 					]
 				},
